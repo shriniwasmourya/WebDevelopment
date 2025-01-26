@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid class</title>
+    <style>
+        .container{
+            height: 800px;
+            width: 100%;
+            background-color: aquamarine;
+            display: grid;
+            /* grid-template-rows: 100px 100px 100px auto;
+            grid-template-columns: 200px 200px 200px 200px 200px; */
+
+            grid-template-rows: repeat(6,2fr);
+            grid-template-columns: repeat(6,1fr);
+
+            row-gap: 10px;
+            column-gap: 20px;
+
+            justify-items: center;
+            align-items: center;
+        }
+
+        .item{
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            margin: 2px;
+            padding: 3px;
+            text-align: center;
+        }
+
+        .item1{
+            /* grid-column-start:2 ;
+            grid-column-end: 5; */
+
+            /* grid-column: 1/5; */
+
+            grid-column: 1/span 4;
+
+            justify-self: end;
+            
+
+            /*place-self : center*/
+        }
+
+        .item2{
+            /* grid-row: 1/4; */
+
+            grid-row: 1/span 3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Chapter</h1>
+
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.name_email , .link_no{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}

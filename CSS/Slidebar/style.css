@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("g.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide{
+    height: 552px;
+    width: 30%;
+    opacity: 0.6;
+    background-color: rgb(27, 26, 26);
+    font-weight: bold;
+
+    position: absolute;
+    left: -500px;
+
+    transition: left 0.3s ease; 
+   
+}
+
+.title{
+    height: 20px;
+    width: 100%;
+    box-shadow: 2px 2px 3px rgb(243, 230, 230);
+    color: wheat;
+    text-align: center;
+}
+
+.content{
+    color: rgb(175, 158, 158);
+    display: flex;
+    margin-top: 14px;
+    padding: 0.8rem;
+}
+
+.content:hover{
+    border: 2px solid wheat;
+    border-radius: 7px;
+}
+
+span{
+    padding-left: 1.1rem;
+}
+
+.apna{
+    display: flex;
+}
+
+.bar{
+    /* margin: 0.5rem; */
+
+}
+
+
+
+#bar:checked + .slide{
+    left: 0px;
+    top: 0px;
+
+    
+}
+
+#bar:checked ~ .slide {
+    left: 0; /* Slide into view when checked */
+}
+
+#bar:not(:checked) ~ .slide {
+    left: -500px; /* Hide off-screen when unchecked */
+}
+
+
+
+#bar:checked + label {
+    display: none;
+}

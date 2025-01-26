@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100%;
+            background-color: yellow;
+        }
+
+        @media (max-width: 400px){
+            div{
+                background-color: green;
+                color: red;
+            }
+        }
+
+        @media (max-width : 150px){
+            div{
+                display: none;
+            }
+        }
+
+        @media (orientation : landscape){
+            div{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Heading 1</h1>
+    </div>
+</body>
+</html>

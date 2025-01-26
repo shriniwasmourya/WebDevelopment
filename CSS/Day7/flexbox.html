@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .main {
+        height: 300px;
+        width: 100%;
+        background-color: aquamarine;
+        display: flex;
+        /* flex-direction: column; */
+
+        /* justify-content: space-evenly; */
+        /* flex-wrap: wrap; */
+        /* align-content: flex-start */
+      }
+
+      div {
+        height: 50px;
+        width: 50px;
+        background-color: green;
+        margin: 3px;
+      }
+
+      #self,
+      #s {
+        /* align-self: flex-end; */
+        /* flex-basis: 190px;
+        flex-grow: 2; */
+
+        /*Shortcut for flex*/
+        flex: 2 1 100px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div id="s">c</div>
+      <div></div>
+      <div></div>
+
+      <div></div>
+      <div id="self">d</div>
+    </div>
+  </body>
+</html>

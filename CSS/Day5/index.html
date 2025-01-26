@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class and Elements</title>
+    <style>
+        p:hover{
+            background-color: yellow;
+            font-weight: bold;
+            font-size: 1.3rem;
+            font-family: Georgia, 'Times New Roman';
+
+        }
+
+        span:active{
+            background-color: red;
+            font-weight: bold;
+            font-size: 1.3rem;
+            font-family: Georgia, 'Times New Roman';
+        }
+
+        input[type="checkbox"]:checked + label{
+            background-color: green;
+            font-weight: bold;
+            font-size: 1.3rem;
+            font-family: Georgia, 'Times New Roman';
+        }
+
+        /* p:nth-of-type(odd){
+            background-color: yellow;
+            font-weight: bold;
+            font-size: 1.3rem;
+            font-family: Georgia, 'Times New Roman';
+            margin: 2rem;
+            padding: 2rem;
+        } */
+
+
+        .ele::first-letter{
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        .ele::first-line{
+            color: red;
+        }
+
+        .ele::selection{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p>This is paragraph</p>
+        <span>This is span tag</span><br>
+        <button>Button</button><br>
+        <input type="text" placeholder="Enter something here">
+        <input type="radio" name="xyz" id="xyz">
+        <input type="checkbox" id="ch">
+        <label for="ch">checkbox</label>
+
+    </div>
+
+    <p>jkj</p>
+    <p>jkljjjl</p>
+    <p>jkjklj</p>
+    <p>jkljjjl</p>
+    <p>jkljjjl</p>
+
+    <h2>psudo element</h2>
+    <p class="ele">This is also paragraph</p>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.container  , h1{
+    text-align: center;
+}
+
+.menu{
+   background-color: aqua;
+   border: 2px solid rgb(182, 131, 131);
+   border-radius: 16px;
+   height: 100px;
+   margin: 4px;
+}

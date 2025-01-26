@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shriniwas Mourya</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        height: 30%;
+        width: 30%;
+        border: 5px solid rgb(168, 162, 71);
+        border-radius: 0.9rem;
+        object-fit: cover;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .loader {
+        width: 50px;
+        height: 50px;
+        border: 5px solid rgb(194, 194, 209);
+        border-radius: 50%;
+        border-top: 3px solid blue;
+        animation: circle 1s linear infinite;
+        margin-top: 50px;
+        display: none;
+      }
+
+      @keyframes circle {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      p {
+        display: none;
+
+        font-size: large;
+        font-weight: 700;
+        color: red;
+        letter-spacing: 1px;
+      }
+
+      @media (max-width : 1200px){
+        img {
+        height: 70%;
+        width: 90%;
+        border: 5px solid rgb(168, 162, 71);
+        border-radius: 0.9rem;
+        object-fit: cover;
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button>Generate</button>
+      <br />
+      <img
+        src="https://images.dog.ceo/breeds/akita/Akita_hiking_in_Shpella_e_Pellumbasit.jpg"
+        alt="Dog random img"
+        class="img"
+      />
+      <br />
+      <div class="loader"></div>
+      <p>
+        You are not connected! <br />
+        please check your data
+      </p>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

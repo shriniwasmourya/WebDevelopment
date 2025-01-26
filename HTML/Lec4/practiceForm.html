@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <form action="/server" method="post">
+    <label for="username">username</label>
+    <input type="text" name="fname" id="username" placeholder="Enter ur username">
+    <br>
+    <label for="pwd">Password</label>
+    <input type="text" name="pwd" id="pwd">
+    <br>
+    <input type="radio" name="gender" id="male">
+    <label for="male">Male</label>
+
+    <input type="radio" name="gender" value="female" id="female">
+    <label for="female">Female</label>
+    <br>
+    <br>
+    <label for="chk">Math</label>
+    <input type="checkbox" id="chk" name="select" checked value="math">
+    <label for="phy">Physics</label>
+    <input type="checkbox" id="phy" name="select" aria-checked="true" value="Physics">
+    <label for="chem">Chemistry</label>
+    <input type="checkbox" id="chem" name="select" disabled checked value="Chemistry">
+    <br>
+
+    <button type="submit">Submit</button>
+    <button type="button">Submit</button>
+
+</form>
+
+<form action="/server">
+    <!-- <input type="text" name="q" id="search" placeholder="Search on Googl"> -->
+    <br>
+    <select name="fruit" id="fruit">
+        <option value="Banana"></option>
+        <option value="Apple">Apple</option>
+    </select>
+
+    <label for="vol">Volume</label>
+    <input type="range" name="vol" id="vol" min="0" max="100" step="20" value="90">
+    
+    <button type="submit">Search</button>
+</form>
+</body>
+</html>
