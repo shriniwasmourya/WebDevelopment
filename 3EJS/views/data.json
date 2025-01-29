@@ -1,0 +1,39 @@
+{
+    "cat" : {
+        "name" : "cats",
+        "followers" : 25000,
+        "following" : 400,
+        "posts" : [
+            {
+                "image" : "http://images4.fanpop.com/image/photos/16000000/Beautiful-Cat-cats-16096437-1280-800.jpg",
+                "likes" : 100,
+                "comments" : 50
+            },
+
+            {
+                "image" : "http://upload.wikimedia.org/wikipedia/commons/9/9b/Photo_of_a_kitten.jpg",
+                "likes" : 200,
+                "comments" : 100
+            }
+        ]
+    },
+
+    "dog" : {
+        "name" : "dogs",
+        "followers" : 45000,
+        "following" : 800,
+        "posts" : [
+            {
+                "image" : "https://static.vecteezy.com/system/resources/previews/005/857/332/non_2x/funny-portrait-of-cute-corgi-dog-outdoors-free-photo.jpg",
+                "likes" : 1000,
+                "comments" : 500
+            },
+
+            {
+                "image" : "https://inspirationseek.com/wp-content/uploads/2016/02/Cute-Dog-Images.jpg",
+                "likes" : 2000,
+                "comments" : 1000
+            }
+        ]
+    }
+}

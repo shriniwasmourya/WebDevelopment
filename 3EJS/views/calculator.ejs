@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .container{
+    height: 350px;
+    width: 250px;
+    background-color: rgb(47, 47, 97);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.9rem;
+    
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.display{
+    height: 10%;
+    width: 90%;
+    background-color: rgb(198, 241, 241);
+    margin: 0 auto;
+    margin-bottom: 0.9rem;
+    border-radius: 0.3rem;
+}
+
+.box{
+    display: grid;
+    grid-template-rows: repeat(4,2fr);
+    grid-template-columns: repeat(4,1fr);
+
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+
+button{
+    background-color: rgb(122, 167, 218);
+    color: white;
+    font-size: 2rem;
+    padding: 0.3rem;
+    border-radius: 11px;
+    margin-top: .2rem;
+}
+
+.btn11{
+    background-color: rgb(208, 221, 29);
+}
+
+.btn22{
+    background-color: brown;
+}
+
+/* 
+use js for more stylinng
+button:hover{
+    color: black;
+    background-color: white;
+} */
+
+
+input{
+    font-size: 1.2rem;
+}
+
+.ac{
+    /* grid-row: 1/span 3; */
+    grid-column: 1/span 3;
+}
+
+.cross{
+    /* grid-column: 1/span 2; */
+}
+
+@media (min-width : 1024px){
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="container">
+        <input type="text" class="box display">
+        <div class="box">
+          <button class="btn b7">7</button><button class="btn b8">8</button
+          ><button class="btn b9">9</button><button class="btn bd btn11">/</button
+          ><button class="btn b4">4</button><button class="btn b5">5</button
+          ><button class="btn b6">6</button><button class="btn btn11 bx">*</button
+          ><button class="btn b1">1</button><button class="btn b2">2</button
+          ><button class="btn b3">3</button><button class="btn bminus btn11">-</button
+          ><button class="btn b0">0</button><button class="btn bdot">.</button
+          ><button class="btn bequal btn22">=</button
+          ><button class="btn bplus btn11">+</button>
+          <button class="ac">AC</button>
+          <button class="cross">X</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
